@@ -1,3 +1,13 @@
+
+@font-face {
+  font-family: 'quicksand';
+  src: url(assets/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+:root, body, *{
+  font-family: 'quicksand';
+}
+
 /* Custom styles for the navbar */
 .navbar {
   border-bottom: 1px solid #e9ecef;
