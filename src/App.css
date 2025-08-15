@@ -23,7 +23,7 @@
 }
 
 .nav-link:hover {
-  color: #007bff !important;
+  color: #3E6F44 !important;
   font-weight: bold !important; /* Bold on hover */
 }
 
@@ -106,8 +106,8 @@
 /* Mega Menu Specific Styles */
 .mega-menu {
   position: absolute !important;
-  width: 100%;
-  left: 0 !important;
+  width: 60%;
+  left: 25% !important;
   right: 0 !important;
   top: 100% !important;
   transform: none !important;
@@ -126,7 +126,7 @@
 
 .mega-menu .dropdown-header {
   font-weight: 600;
-  color: #495057;
+  color: #5E936C;
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -146,7 +146,7 @@
 
 .mega-menu .dropdown-item:hover {
   background-color: #f8f9fa;
-  color: #007bff;
+  color: #93DA97;
   transform: translateX(5px);
 }
 
@@ -295,7 +295,7 @@
 }
 
 .navbar-nav .nav-item:hover .nav-link::after {
-  width: 80%;
+  display: none;
 }
 
 /* Adjust alignment for right-side items */
