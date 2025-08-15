@@ -54,8 +54,6 @@ const Navbar = () => {
         { name: "USA Company", category: "International" },
         { name: "Singapore Company", category: "International" },
         { name: "UK Company", category: "International" },
-          { name: "USA Company", category: "International" },
-       
        
       ],
     },

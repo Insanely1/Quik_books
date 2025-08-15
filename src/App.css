@@ -13,7 +13,7 @@
 }
 
 .nav-link:hover {
-  color: #007bff !important;
+  color: #5E936C !important;
   font-weight: bold !important; /* Bold on hover */
 }
 
@@ -44,7 +44,7 @@
 
 .dropdown-item:hover {
   background-color: #f8f9fa;
-  color: #007bff;
+  color: #39c82c;
 }
 
 .btn-primary {
@@ -96,8 +96,8 @@
 /* Mega Menu Specific Styles */
 .mega-menu {
   position: absolute !important;
-  width: 100%;
-  left: 0 !important;
+  width: 60%;
+  left: 25% !important;
   right: 0 !important;
   top: 100% !important;
   transform: none !important;
@@ -116,7 +116,7 @@
 
 .mega-menu .dropdown-header {
   font-weight: 600;
-  color: #495057;
+  color: #5E936C;
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -136,7 +136,7 @@
 
 .mega-menu .dropdown-item:hover {
   background-color: #f8f9fa;
-  color: #007bff;
+  color: #93DA97;
   transform: translateX(5px);
 }
 
@@ -182,7 +182,7 @@
 
   .mobile-dropdown-item:hover {
     background-color: #e9ecef; /* Lighter hover for mobile sub-items */
-    color: #007bff;
+    color: #5E936C;
   }
 
   .d-flex.align-items-center {
@@ -262,7 +262,7 @@
 
 /* Custom search button styling */
 .btn-link:hover {
-  color: #007bff !important;
+  color: #5E936C!important;
 }
 
 /* Loading spinner */
@@ -271,21 +271,9 @@
   height: 1rem;
 }
 
-/* Add hover indicator for desktop */
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
 
 .navbar-nav .nav-item:hover .nav-link::after {
-  width: 80%;
+  width: none;
 }
 
 /* Adjust alignment for right-side items */
