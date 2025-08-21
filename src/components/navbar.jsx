@@ -1,5 +1,9 @@
 "use client"
 
+
+import { Link } from "react-router-dom";
+
+
 import { useState, useEffect } from "react"
 import SearchModal from "./SearchModal"
 import LoginModal from "./LoginModal"
@@ -54,7 +58,7 @@ const Navbar = () => {
         { name: "USA Company", category: "International" },
         { name: "Singapore Company", category: "International" },
         { name: "UK Company", category: "International" },
-       
+
       ],
     },
     {
@@ -223,7 +227,9 @@ const Navbar = () => {
                                 {item.suboptions
                                   .filter((option) => option.category === "Individual")
                                   .map((suboption, subIndex) => (
-                                    <a key={subIndex} className="dropdown-item" href="#">
+                                    <a key={subIndex} className="dropdown-item" 
+                                    href={suboption.name === "Proprietorship" ? "/startup/proprietorship" : "#"}
+                                    >
                                       {suboption.name}
                                     </a>
                                   ))}
@@ -291,11 +297,31 @@ const Navbar = () => {
             {/* Right side items */}
             <div className="d-flex align-items-center gap-3 ms-auto ms-lg-0">
               {/* Search icon */}
-              <button className="btn btn-link p-0 border-0 text-dark" onClick={() => setShowSearch(true)}>
+              {/* <button className="btn btn-link p-0 border-0 text-dark" onClick={() => setShowSearch(true)}>
                 <svg width="20" height="20" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 0 1 1-11 0 5.5 0 0 1 11 0z" />
                 </svg>
+              </button> */}
+
+              {/* Search icon */}
+              <button
+                className="btn btn-link p-0 border-0 text-dark"
+                onClick={() => setShowSearch(true)}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 0a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"
+                  />
+                </svg>
               </button>
+
 
               {/* Login link */}
               <button
@@ -311,8 +337,8 @@ const Navbar = () => {
                 className="btn btn-primary px-3 py-2"
                 style={{
                   fontSize: "14px",
-                  backgroundColor: "#007bff",
-                  borderColor: "#007bff",
+                  backgroundColor: "#5E936C",
+                  borderColor: "#5E936C",
                   borderRadius: "4px",
                 }}
                 onClick={() => setShowSignUp(true)}
