@@ -17,13 +17,15 @@
   max-height: 40px;
   width: auto;
 }
-
+.nav-link {
+  font-size: 14px;
+}
 .nav-link {
   transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out; /* Added font-weight transition */
 }
 
 .nav-link:hover {
-  color: #3E6F44 !important;
+  color: #5E936C !important;
   font-weight: bold !important; /* Bold on hover */
 }
 
@@ -54,7 +56,7 @@
 
 .dropdown-item:hover {
   background-color: #f8f9fa;
-  color: #007bff;
+  color: #39c82c;
 }
 
 .btn-primary {
@@ -192,7 +194,7 @@
 
   .mobile-dropdown-item:hover {
     background-color: #e9ecef; /* Lighter hover for mobile sub-items */
-    color: #007bff;
+    color: #5E936C;
   }
 
   .d-flex.align-items-center {
@@ -272,7 +274,7 @@
 
 /* Custom search button styling */
 .btn-link:hover {
-  color: #007bff !important;
+  color: #5E936C!important;
 }
 
 /* Loading spinner */
@@ -281,21 +283,9 @@
   height: 1rem;
 }
 
-/* Add hover indicator for desktop */
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: all 0.3s ease-in-out;
-  transform: translateX(-50%);
-}
 
 .navbar-nav .nav-item:hover .nav-link::after {
-  display: none;
+  width: none;
 }
 
 /* Adjust alignment for right-side items */
