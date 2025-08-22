@@ -1,4 +1,4 @@
-.proprietor-page {
+.page {
   background-color: #ffffff; /* Page background white */
   padding: 60px 20px;
   min-height: 100vh;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.proprietor-page .content-box {
+.page .content-box {
   max-width: 900px;
   background-color: #e3f6e3; /* Box background white */
   border: 2px  #93DA97; /* Light green border */
@@ -17,33 +17,33 @@
   color: #000602;
 }
 
-.proprietor-page .content-box .title {
+.page .content-box .title {
   color: #025406;
   text-align: center;
   margin-bottom: 30px;
   font-size: 36px;
 }
 
-.proprietor-page .content-box h2 {
+.page .content-box h2 {
   color: #5E936C;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.proprietor-page .content-box p, 
-.proprietor-page .content-box ul, 
-.proprietor-page .content-box ol {
+.page .content-box p, 
+.page .content-box ul, 
+.page .content-box ol {
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 20px;
 }
 
-.proprietor-page .content-box ul li, 
-.proprietor-page .content-box ol li {
+.page .content-box ul li, 
+.page .content-box ol li {
   margin-bottom: 10px;
 }
 
-.proprietor-page .content-box .note {
+.page .content-box .note {
   text-align: center;
   font-weight: bold;
   margin-top: 40px;

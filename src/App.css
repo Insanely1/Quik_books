@@ -7,7 +7,9 @@
   max-height: 40px;
   width: auto;
 }
-
+.nav-link {
+  font-size: 14px;
+}
 .nav-link {
   transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out; /* Added font-weight transition */
 }

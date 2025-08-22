@@ -5,7 +5,7 @@ import './style.css'
 const Proprietorship = () => {
   return (
     <div>
-        <div className="proprietor-page">
+        <div className="page">
       <div className="content-box">
         <h1 className="title">Proprietorship Registration</h1>
         <p className="intro">

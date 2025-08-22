@@ -194,6 +194,14 @@ const Navbar = () => {
           {/* Navigation items */}
           <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+
+              {/* Home link */}
+              <li className="nav-item">
+                <a className="nav-link text-dark fw-normal px-3" href="/"  style={{ fontSize: "14px" }} >
+                  Home
+                 
+                </a>
+              </li>
               {navItems.map((item, index) => (
                 <li className={`nav-item ${item.suboptions ? "dropdown position-static" : ""}`} key={index}>
                   <a
@@ -227,8 +235,8 @@ const Navbar = () => {
                                 {item.suboptions
                                   .filter((option) => option.category === "Individual")
                                   .map((suboption, subIndex) => (
-                                    <a key={subIndex} className="dropdown-item" 
-                                    href={suboption.name === "Proprietorship" ? "/startup/proprietorship" : "#"}
+                                    <a key={subIndex} className="dropdown-item"
+                                      href={suboption.name === "Proprietorship" ? "/startup/proprietorship" : "#"}
                                     >
                                       {suboption.name}
                                     </a>
